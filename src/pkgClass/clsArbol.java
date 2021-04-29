@@ -87,6 +87,45 @@ public class clsArbol {
         }        
     }
     
+    public void buscarnumero(int dato){        
+        clsNodo rootTmp = root;
+        if(rootTmp != null){
+            if(dato == rootTmp.getNum()){
+                System.out.println("El número "+dato +" fue encontrado con éxito.");
+            }else{
+                while(dato != rootTmp.getNum()){
+                    if(dato > rootTmp.getNum()){
+                        rootTmp = rootTmp.getDer();                    
+                    }else{                    
+                        rootTmp = rootTmp.getIzq();
+                    }
+                    if(rootTmp == null){
+                        System.out.println("El número "+dato +" no fue encontrado en el arbol.");
+                        return;
+                    }                
+                }
+                System.out.println("El número "+dato +" fue encontrado con éxito.");                
+            }
+        }else{
+           System.out.println("El árbol no tiene nodos.");
+        }        
+    }
+    
+    public int altura(clsNodo rootTmp){
+        int alt = 0;        
+        if(rootTmp == null){
+            return alt;
+        }
+        if(rootTmp.getDer() != null){
+            alt = Math.max(alt, altura(rootTmp.getDer()));                                            
+        }
+        if(rootTmp.getIzq() != null){
+            alt = Math.max(alt, altura(rootTmp.getIzq()));                                            
+        }
+        alt++;        
+        return alt;
+    }
+    
 
     /**
      * @return the root

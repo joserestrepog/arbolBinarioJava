@@ -27,16 +27,16 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="txtNum" min="-2" pref="94" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="btnPosOrden" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="btnInOrden" max="32767" attributes="0"/>
-                      <Component id="btnPreOrden" max="32767" attributes="0"/>
-                      <Component id="btnListar" alignment="0" max="32767" attributes="0"/>
-                      <Component id="btnInsertar" alignment="0" max="32767" attributes="0"/>
-                  </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnAltura" max="32767" attributes="0"/>
+                  <Component id="btnBuscarNumero" pref="113" max="32767" attributes="0"/>
+                  <Component id="btnInOrden" max="32767" attributes="0"/>
+                  <Component id="btnPreOrden" max="32767" attributes="0"/>
+                  <Component id="btnListar" alignment="0" max="32767" attributes="0"/>
+                  <Component id="btnInsertar" alignment="0" max="32767" attributes="0"/>
+                  <Component id="btnPosOrden" alignment="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="180" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="150" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -48,15 +48,19 @@
               <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
               <Component id="btnListar" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnPreOrden" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtNum" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Component id="btnPreOrden" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="btnInOrden" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNum" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="btnInOrden" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="btnPosOrden" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="113" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="btnBuscarNumero" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="btnAltura" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="45" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -102,6 +106,22 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPosOrdenActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAltura">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Altura"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAlturaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnBuscarNumero">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Buscar n&#xfa;mero"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarNumeroActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
